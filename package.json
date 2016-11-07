@@ -4,7 +4,8 @@
   "description": "As a programmer   I can see a list of my notes, where each note is abbreviated to the first 20 characters   So I can find the one I want",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node node_modules/http-server/bin/http-server"
   },
   "repository": {
     "type": "git",
