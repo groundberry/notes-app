@@ -12,3 +12,14 @@ NoteApp.prototype.abbrev = function () {
 NoteApp.prototype.createNewNote = function(note) {
   this.notes.push(note);
 };
+//
+NoteApp.prototype.displayAbbrevNotes = function () {
+  for (i=0;i<this.sliced.length;i++) {
+    var mydiv = document.getElementById("abbrevNotes");
+    var aTag = document.createElement('a');
+    aTag.setAttribute('href', i);
+    console.log(i);
+    aTag.innerHTML = i;
+    mydiv.appendChild(aTag);
+  }
+};
