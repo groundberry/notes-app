@@ -1,6 +1,8 @@
 function noteAbbrevTo20() {
   var note = new NoteApp();
-  assert.isTrue(note.abbrev <= 20);
+  note.createNewNote('Hello, my name is makers student alpha; I love coding and ping pong');
+  note.abbrev();
+  assert.isTrue(note.sliced[0] === 'Hello, my name is ma');
 }
 
 noteAbbrevTo20();
