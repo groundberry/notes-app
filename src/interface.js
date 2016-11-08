@@ -3,6 +3,7 @@ var newNoteApp = function() {
 };
 
 function saveNote() {
-  note = document.getElementById("create-note-text").value;
+  note = document.getElementById('create-note-text').value;
   noteApp.createNewNote(note);
+  document.noteForm.reset();
 }
