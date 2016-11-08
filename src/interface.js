@@ -3,7 +3,12 @@ var newNoteApp = function() {
 };
 
 function saveNote() {
-  note = document.getElementById('create-note-text').value;
-  noteApp.createNewNote(note);
+  arrayNote = document.getElementById('create-note-text').value;
+  noteApp.createNewNote(arrayNote);
+  noteApp.abbrevNote(arrayNote);
   document.noteForm.reset();
+}
+
+function addLinkNotes() {
+  var formNote = doxu
 }
