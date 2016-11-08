@@ -1,6 +1,3 @@
-// function NoteApp(){
-//
-// }
 
 function noteAbbrevTo20() {
   var note = new NoteApp();
