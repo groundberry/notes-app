@@ -1,14 +1,8 @@
 var newNoteApp = function() {
-  noteApp = new NoteApp()
+  noteApp = new NoteApp();
 };
 
-startNoteApp();
-
-function startNoteApp() {
-  document.getElementById("create-note-button").addEventListener('click', function() {
-  createNewNote();
-});
-
-
-
+function saveNote() {
+  note = document.getElementById("create-note-text").value;
+  noteApp.createNewNote(note);
 }
