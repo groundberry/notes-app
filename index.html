@@ -4,18 +4,13 @@
     <meta charset="utf-8">
     <title>This is just a test</title>
     <script src="src/noteApp.js"></script>
+    <script src="src/interface.js"></script>
   </head>
   <body>
 
   </body>
 </html>
 
-
-<body>
-  <!-- <a href="#one">Note 1</a> |
-  <a href="#two">Note 2</a> |
-  <a href="#three">Note 3</a> |
-  <a href="#four">Note 4</a> -->
 
   <div id="abbrevNotes"></div>
 
@@ -25,26 +20,9 @@
     note.createNewNote("pop");
     note.createNewNote("screwed");
     note.createNewNote("what???");
+    note.createNewNote("matter???");
+    note.createNewNote("this is a very very very very very long note");
     note.abbrev();
-    note.displayAbbrevNotes();
+    displayAbbrevNotes();
 
-    // makeUrlChangeNoteForCurrentPage();
-    //
-    // function makeUrlChangeNoteForCurrentPage() {
-    //   window.addEventListener("hashchange", showNoteForCurrentPage);
-    // };
-    //
-    // function showNoteForCurrentPage() {
-    //   showNote(getNoteFromUrl(window.location));
-    // };
-    //
-    // function getNoteFromUrl(location) {
-    //   return location.hash.split("#")[1];
-    // };
-    //
-    // function showNote(note) {
-    //   document
-    //     .getElementById("abbrevNotes")
-    //     .innerHTML = note;
-    // };
   </script>
