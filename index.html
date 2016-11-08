@@ -2,14 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Note App</title>
     <script src="src/noteApp.js"></script>
+    <script src="src/interface.js"></script>
+    <script> window.onload = newNoteApp() </script>
   </head>
   <body>
     <h1> My Notes </h1>
     <form class="" action="index.html" method="post">
-    <textarea type="text" name="note" style="width: 50%; height: 20%" ></textarea>
-    <input type="button" value="Create note" >
+    <textarea id="create-note-text" type="text" name="note" style="width: 50%; height: 20%" ></textarea>
+    <input id="create-note-button" type="button" value="Create note" >
     </form>
 
   </body>
