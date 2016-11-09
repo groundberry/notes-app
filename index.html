@@ -6,26 +6,28 @@
   <script src="src/noteApp.js"></script>
   <script src="src/interface.js"></script>
   <script> window.onload = newNoteApp() </script>
-  <!-- <link rel="stylesheet" type="text/css" href="public/stilesheets/index.css">
+  <link rel="stylesheet" type="text/css" href="public/stilesheets/index.css">
   <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
 </head>
 <body>
   <div id="create-notes">
-    <h1> My Notes </h1>
+    <h1>Notepad</h1>
     <form action="index.html" method="post" name="noteForm">
       <textarea id="create-note-text" class="text-field" type="text" name="note" ></textarea>
       <button id="create-note-button" type="button" onclick="saveNote()">Create note</button>
     </form>
+    <div>
+      <h1>My notes...</h1>
+        <div id="abbrev-notes">
+        </div>
+    </div>
   </div>
+  <div id="display-notes">
+    <h1>Remember...</h1>
+    <div id="full-notes">
 
-  <div id="abbrevNotes">
-
+    </div>
   </div>
-
-  <h1>Remember...</h1>
-
-  <div id="fullNotes"></div>
-
 </body>
 </html>
