@@ -1,3 +1,12 @@
+var newNoteApp = function() {
+  noteApp = new NoteApp();
+};
+
+function saveNote() {
+  note = document.getElementById('create-note-text').value;
+  noteApp.createNewNote(note);
+  document.noteForm.reset();
+}
 
 function displayAbbrevNotes() {
   for (i=0;i<note.sliced.length;i++) {

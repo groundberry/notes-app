@@ -14,3 +14,9 @@ function testCreateNewNote() {
 }
 
 testCreateNewNote();
+
+
+function testCreateNewNoteFromForm() {
+  var noteApp = new NoteApp();
+  
+}

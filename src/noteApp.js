@@ -1,7 +1,9 @@
+
 var NoteApp = function () {
   this.notes = [];
   this.sliced = [];
 };
+
 
 NoteApp.prototype.abbrev = function () {
   for(var i=0; i < this.notes.length; i++) {
