@@ -10,7 +10,17 @@ function saveNote() {
   displayAbbrevNotes();
 }
 
+makeUrlChangeNoteForCurrentPage();
 
+function makeUrlChangeNoteForCurrentPage() {
+  window.addEventListener("hashchange", showNoteForCurrentPage);
+}
+
+function showNote(note) {
+  document
+    .getElementById("fullNotes")
+    .innerHTML = note;
+  }
 
 function displayAbbrevNotes() {
   link = "";
@@ -19,4 +29,5 @@ function displayAbbrevNotes() {
     link += "<a href=#"+noteApp.notes[i]+">"+noteApp.sliced[i]+"</a><br>";
     myDiv.innerHTML = link;
   }
+
 }
