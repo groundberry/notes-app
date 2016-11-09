@@ -6,7 +6,7 @@ var NoteApp = function () {
 
 
 NoteApp.prototype.abbrev = function (note) {
-  slicedNote = note.slice(0,20);
+  var slicedNote = note.slice(0,20);
   this.sliced.push(slicedNote);
 };
 

@@ -3,7 +3,7 @@ var newNoteApp = function() {
 };
 
 function saveNote() {
-  note = document.getElementById('create-note-text').value;
+  var note = document.getElementById('create-note-text').value;
   noteApp.createNewNote(note);
   noteApp.abbrev(note);
   document.noteForm.reset();
@@ -11,10 +11,14 @@ function saveNote() {
 }
 
 function displayAbbrevNotes() {
-  link = "";
-  for (i=0; i<noteApp.sliced.length; i++) {
-    myDiv = document.getElementById('abbrev-notes');
-    link += "<a href=#"+noteApp.notes[i].replace(/\s/g, "_") +">"+noteApp.sliced[i]+"</a><br>";
+  var link = "";
+  for (i=0; i < noteApp.sliced.length; i++) {
+    var slicedNote = noteApp.sliced[i];
+    var myDiv = document.getElementById('abbrev-notes');
+    if (slicedNote.length >= 20) {
+      slicedNote += ' ...';
+    }
+    link += "<a href=#" + noteApp.notes[i].replace(/\s/g, "_") + ">" + slicedNote + "</a><br>";
     myDiv.innerHTML = link;
   }
 }
