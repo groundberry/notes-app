@@ -10,18 +10,6 @@ function saveNote() {
   displayAbbrevNotes();
 }
 
-makeUrlChangeNoteForCurrentPage();
-
-function makeUrlChangeNoteForCurrentPage() {
-  window.addEventListener("hashchange", showNoteForCurrentPage);
-}
-
-function showNote(note) {
-  document
-    .getElementById("fullNotes")
-    .innerHTML = note;
-  }
-
 function displayAbbrevNotes() {
   link = "";
   for (i=0; i<noteApp.sliced.length; i++) {
