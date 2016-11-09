@@ -5,10 +5,9 @@ var NoteApp = function () {
 };
 
 
-NoteApp.prototype.abbrev = function () {
-  for(var i=0; i < this.notes.length; i++) {
-  this.sliced.push(this.notes[i].slice(0, 20));
-  }
+NoteApp.prototype.abbrev = function (note) {
+  slicedNote = note.slice(0,20);
+  this.sliced.push(slicedNote);
 };
 
 NoteApp.prototype.createNewNote = function(note) {

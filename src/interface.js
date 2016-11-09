@@ -5,6 +5,7 @@ var newNoteApp = function() {
 function saveNote() {
   note = document.getElementById('create-note-text').value;
   noteApp.createNewNote(note);
+  noteApp.abbrev(note);
   document.noteForm.reset();
 }
 
