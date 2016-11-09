@@ -14,7 +14,7 @@ function displayAbbrevNotes() {
   link = "";
   for (i=0; i<noteApp.sliced.length; i++) {
     myDiv = document.getElementById('abbrevNotes');
-    link += "<a href=#"+noteApp.notes[i]+">"+noteApp.sliced[i]+"</a><br>";
+    link += "<a href=#"+noteApp.notes[i].replace(/\s/g, "_") +">"+noteApp.sliced[i]+"</a><br>";
     myDiv.innerHTML = link;
   }
 }
@@ -26,7 +26,7 @@ function makeUrlChangeNoteForCurrentPage() {
 }
 
 function showNoteForCurrentPage() {
-  showNote(getNoteFromUrl(window.location));
+  showNote(getNoteFromUrl((window.location)).replace(/_/g, ' '));
 }
 
 function getNoteFromUrl(location) {
