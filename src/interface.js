@@ -4,7 +4,7 @@ function displayAbbrevNotes() {
     var mydiv = document.getElementById("abbrevNotes");
     var aTag = document.createElement('a');
     aTag.setAttribute("href", "#" + note.sliced[i]);
-    aTag.innerHTML = note.sliced[i] + "<br>";
+    aTag.innerHTML = note.sliced[i];
     console.log(aTag);
     mydiv.appendChild(aTag);
   }
