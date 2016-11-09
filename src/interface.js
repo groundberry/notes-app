@@ -7,6 +7,7 @@ displayFullNoteForEachLink();
 function saveNote() {
   arrayNote = document.getElementById('create-note-text').value;
   noteApp.createNewNote(arrayNote);
+  // noteApp.abbrev()
   noteApp.abbrevNote(arrayNote);
   document.noteForm.reset();
   addLinkNotes();
@@ -19,7 +20,7 @@ function addLinkNotes() {
     // var aTag = document.createElement('a');
     // aTag.setAttribute("href","#" + noteApp.sliced[i]);
     // aTag.inner.HTML = noteApp.sliced[i];
-    link += "<a href='#"+noteApp.notes[i]+"'>"+noteApp.sliced[i]+"</a><br>"
+    link += "<a href=#"+noteApp.notes[i]+">"+noteApp.sliced[i]+"</a><br>"
     myDiv.innerHTML = link;
   };
 };
