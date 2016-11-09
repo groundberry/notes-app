@@ -1,35 +1,67 @@
+html {
+  background: url("http://www.bridgetonlocal.com/wpimages/wp32230a51_05_06.jpg");
+}
+
 h1 {
   font-family: 'Shrikhand';
   font-size: 3em;
 }
 
-h2 {
+a {
+  font-family: 'Indie Flower';
+  font-size: 2em;
 }
 
-#create-notes {
+#create-notes,
+#display-notes {
   display: block;
   width: 45%;
   float: left;
-  background: url("http://www.clipartkid.com/images/181/notepad-clip-art-at-clker-com-vector-clip-art-online-royalty-free-JpdSWA-clipart.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  margin-left: 5%;
 }
 
-#create-notes h1 {
-  display: inline-block;;
+#create-notes h1,
+#display-notes h1 {
+  display: block;;
 }
 
-.notes-form {
-  background-color: red;
+#abbrev-notes {
   display: block;
+  float: left;
+  background-color: #00cc66;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  width: 60%;
+  padding: 40px;
+}
+
+#full-notes {
+  display: block;
+  float: left;
+  width: 60%;
+  height: 250px !important;
+  font-size: 2em;
+  font-family: 'Indie Flower';
+  border-radius: 30px;
+  background-color: #ff66cc;
+  padding: 30px;
+}
+
+form {
+  transform: rotate(-10deg);
+  width: 60%;
 }
 
 textarea {
-  width: 300px !important;
-  height: 400px !important;
+  width: 100%;
+  height: 250px !important;
   font-size: 2em;
   border-color: transparent;
   font-family: 'Indie Flower', cursive;
+  border-radius: 30px;
+  background-color: #ffff66;
+  padding: 30px;
 }
 
 input.break {
@@ -39,20 +71,16 @@ input.break {
 }
 
 button {
-  border-color: #ffcc66;
-  background-color: #ffcc66;
+  border-color: #66a3ff;
+  background-color: #0066ff;
   border-width: thick;
-  border-radius: 5px;
+  border-radius: 10px;
   border-style: none;
   display: block;
   font-family: arial;
-  font-size: 1em;
-}
-
-#see-notes {
-  background: url("http://www.clipartkid.com/images/181/notepad-clip-art-at-clker-com-vector-clip-art-online-royalty-free-JpdSWA-clipart.png");
-  background-repeat: no-repeat;
-  display: block;
-  width: 45%;
-  float: right;
+  font-size: 1.2em;
+  color: #e6f0ff;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }

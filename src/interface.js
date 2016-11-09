@@ -13,7 +13,7 @@ function saveNote() {
 function displayAbbrevNotes() {
   link = "";
   for (i=0; i<noteApp.sliced.length; i++) {
-    myDiv = document.getElementById('abbrevNotes');
+    myDiv = document.getElementById('abbrev-notes');
     link += "<a href=#"+noteApp.notes[i].replace(/\s/g, "_") +">"+noteApp.sliced[i]+"</a><br>";
     myDiv.innerHTML = link;
   }
@@ -35,6 +35,6 @@ function getNoteFromUrl(location) {
 
 function showNote(note) {
   document
-    .getElementById("fullNotes")
+    .getElementById("full-notes")
     .innerHTML = note;
 }
