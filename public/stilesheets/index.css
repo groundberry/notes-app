@@ -1,0 +1,58 @@
+h1 {
+  font-family: 'Shrikhand';
+  font-size: 3em;
+}
+
+h2 {
+}
+
+#create-notes {
+  display: block;
+  width: 45%;
+  float: left;
+  background: url("http://www.clipartkid.com/images/181/notepad-clip-art-at-clker-com-vector-clip-art-online-royalty-free-JpdSWA-clipart.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#create-notes h1 {
+  display: inline-block;;
+}
+
+.notes-form {
+  background-color: red;
+  display: block;
+}
+
+textarea {
+  width: 300px !important;
+  height: 400px !important;
+  font-size: 2em;
+  border-color: transparent;
+  font-family: 'Indie Flower', cursive;
+}
+
+input.break {
+  word-wrap: break-word;
+  word-break: break-all;
+  height: 80px;
+}
+
+button {
+  border-color: #ffcc66;
+  background-color: #ffcc66;
+  border-width: thick;
+  border-radius: 5px;
+  border-style: none;
+  display: block;
+  font-family: arial;
+  font-size: 1em;
+}
+
+#see-notes {
+  background: url("http://www.clipartkid.com/images/181/notepad-clip-art-at-clker-com-vector-clip-art-online-royalty-free-JpdSWA-clipart.png");
+  background-repeat: no-repeat;
+  display: block;
+  width: 45%;
+  float: right;
+}
