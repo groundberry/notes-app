@@ -9,16 +9,7 @@ function saveNote() {
   document.noteForm.reset();
 }
 
-// function displayAbbrevNotes() {
-//   for (i=0;i<noteApp.sliced.length;i++) {
-//     var mydiv = document.getElementById("abbrevNotes");
-//     var aTag = document.createElement('a');
-//     aTag.setAttribute("href", "#" + noteApp.sliced[i]);
-//     aTag.innerHTML = noteApp.sliced[i];
-//     console.log(aTag);
-//     mydiv.appendChild(aTag);
-//   }
-// }
+
 
 makeUrlChangeNoteForCurrentPage();
 
