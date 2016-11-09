@@ -17,5 +17,24 @@ function displayAbbrevNotes() {
     link += "<a href=#"+noteApp.notes[i]+">"+noteApp.sliced[i]+"</a><br>";
     myDiv.innerHTML = link;
   }
+}
 
+makeUrlChangeNoteForCurrentPage();
+
+function makeUrlChangeNoteForCurrentPage() {
+  window.addEventListener("hashchange", showNoteForCurrentPage);
+}
+
+function showNoteForCurrentPage() {
+  showNote(getNoteFromUrl(window.location));
+}
+
+function getNoteFromUrl(location) {
+  return location.hash.split("#")[1];
+}
+
+function showNote(note) {
+  document
+    .getElementById("fullNotes")
+    .innerHTML = note;
 }
