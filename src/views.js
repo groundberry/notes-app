@@ -17,15 +17,14 @@ function displayAbbrevNotes() {
     var slicedNote = noteApp.sliced[i];
     if (slicedNote.length >= 20) {
       slicedNote += ' ...';
-      link += "<a href=#" + noteApp.notes[i].replace(/\s/g, "_") + ">" + slicedNote + "</a><br>";
-      myDiv.innerHTML = link;
+    }
+    link += "<a href=#" + noteApp.notes[i].replace(/\s/g, "_") + ">" + slicedNote + "</a><br>";
+    myDiv.innerHTML = link;
     }
   }
-}
 
-
-function showNote(note) {
-  document
-  .getElementById("full-notes")
-  .innerHTML = note;
-}
+  function showNote(note) {
+    document
+    .getElementById("full-notes")
+    .innerHTML = note;
+  }
